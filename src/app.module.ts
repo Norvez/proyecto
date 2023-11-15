@@ -9,6 +9,7 @@ import { Galeria } from './galeria/entities/galeria.entity';
 import { Servicio } from './servicios/entities/servicio.entity';
 import { Company } from './company/entities/company.entity';
 
+
 @Module({
   imports: [GaleriaModule, ServiciosModule, CompanyModule,
   TypeOrmModule.forRoot({

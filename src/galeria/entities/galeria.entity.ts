@@ -9,8 +9,11 @@ export class Galeria {
     id: number;
 
     @Column()
-    url: string;
-    
+    name: string;
+
+    @Column()
+    imageUrl: string;
+
     @ManyToOne(() => Company, company => company.galeria)
     company: Company;
 }

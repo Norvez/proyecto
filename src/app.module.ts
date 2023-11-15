@@ -16,8 +16,8 @@ import { Company } from './company/entities/company.entity';
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password:'DiAnGaMa18#',
-    database:'diangama',
+    password:'admi',
+    database:'manytomany',
     entities: [Galeria, Servicio, Company,],
     autoLoadEntities: true,
     synchronize: true

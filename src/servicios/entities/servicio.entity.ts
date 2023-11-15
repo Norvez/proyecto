@@ -8,7 +8,11 @@ export class Servicio {
     id: number;
 
     @Column()
-    url: string;
+    Type: string;
+    @Column()
+    IcoUrl: string;
+    @Column()
+    Descripcion: string;
     
     @ManyToOne(() => Company, company => company.servicio)
     company: Company;

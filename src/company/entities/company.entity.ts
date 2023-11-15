@@ -10,7 +10,18 @@ export class Company {
     id: number;
 
     @Column()
-    url: string;
+    Headerlogo: string;
+    @Column()
+    title: string;
+    @Column()
+    Descripcion: string;
+    @Column()
+    FooterCopyRightTex: string;
+    @Column()
+    FooterteamMenbers: string;
+    @Column()
+    HeaderCompanyName: string;
+    
     
     @OneToMany(() => Galeria, galeria => galeria.company)
     galeria: Galeria;

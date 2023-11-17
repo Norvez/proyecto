@@ -14,6 +14,6 @@ export class Servicio {
     @Column()
     Descripcion: string;
     
-    @ManyToOne(() => Company, company => company.servicio)
+    @ManyToOne(() => Company, company => company.servicios)
     company: Company;
 }

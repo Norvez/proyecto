@@ -3,7 +3,7 @@ import { Servicio } from "src/servicios/entities/servicio.entity";
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 
-@Entity('companies')
+@Entity('company')
 export class Company {
 
     @PrimaryGeneratedColumn()
@@ -24,8 +24,8 @@ export class Company {
     
     
     @OneToMany(() => Galeria, galeria => galeria.company)
-    galeria: Galeria;
+    galerias: Galeria[];
 
     @OneToMany(() => Servicio, servicio => servicio.company)
-    servicio: Servicio;
+    servicios: Servicio[];
 }

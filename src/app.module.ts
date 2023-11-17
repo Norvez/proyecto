@@ -17,8 +17,8 @@ import { Company } from './company/entities/company.entity';
     port: 3306,
     username: 'root',
     password:'admi',
-    database:'manytomany',
-    entities: [Galeria, Servicio, Company,],
+    database:'pruebasdb',
+    entities: [Galeria, Servicio, Company],
     autoLoadEntities: true,
     synchronize: true
   }),

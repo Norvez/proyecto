@@ -14,6 +14,6 @@ export class Galeria {
     @Column()
     imageUrl: string;
 
-    @ManyToOne(() => Company, company => company.galeria)
+    @ManyToOne(() => Company, company => company.galerias)
     company: Company;
 }
